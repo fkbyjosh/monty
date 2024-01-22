@@ -1,7 +1,13 @@
+#define _POSIX_C_SOURCE 200809L
 #include "monty.h"
+#include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+
+void file_error(char *argv);
+void error_usage(void);
+int status = 0;		/* global var declaration */
 
 /**
 * main - a function that interpretes the monty code
